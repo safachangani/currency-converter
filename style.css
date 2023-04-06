@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap');
 
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0;
     font-family: 'Roboto Slab', serif;
 }
-.container{
+
+.container {
     /* background: rgb(255,135,147); */
-    background: linear-gradient(180deg, rgba(255,135,147,1) 0%, rgba(226,130,163,1) 0%, rgba(226,130,163,1) 0%, rgba(220,129,167,1) 3%, rgba(183,122,188,1) 41%, rgba(172,120,194,1) 77%, rgba(149,116,207,1) 100%, rgba(120,110,224,1) 100%, rgba(118,109,225,1) 100%, rgba(118,109,225,1) 100%, rgba(118,109,225,1) 100%);
+    background: linear-gradient(180deg, rgba(255, 135, 147, 1) 0%, rgba(226, 130, 163, 1) 0%, rgba(226, 130, 163, 1) 0%, rgba(220, 129, 167, 1) 3%, rgba(183, 122, 188, 1) 41%, rgba(172, 120, 194, 1) 77%, rgba(149, 116, 207, 1) 100%, rgba(120, 110, 224, 1) 100%, rgba(118, 109, 225, 1) 100%, rgba(118, 109, 225, 1) 100%, rgba(118, 109, 225, 1) 100%);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.currency{
+
+.currency {
     width: 35%;
     background-color: white;
     display: flex;
@@ -24,23 +29,27 @@ body{
     padding: 1.5rem 0rem;
     border-radius: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-img{
+
+img {
     width: 28%;
 }
-h2{
+
+h2 {
     color: #3C427C;
     margin: 0.2rem;
 }
-.currency-convert{
+
+.currency-convert {
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 1.3rem 0rem;
 }
-input{
+
+input {
     padding: 0.7rem;
     margin: 0.5rem 0rem;
     border: solid 1px #3C427C;
@@ -48,46 +57,55 @@ input{
     color: #3C427C;
     font-weight: 700;
 }
-select{
-   
+
+select {
+
     border: solid 1px #3C427C;
     margin: 0.5rem 0rem;
     color: #3C427C;
     border-radius: .4rem;
 
 }
-label{
+
+label {
     color: #3c427cbf;
     font-weight: 500;
 }
-input[type='text']:focus{
+
+input[type='text']:focus {
     outline: solid 1px #3C427C;
 }
-select:focus{
+
+select:focus {
     outline: #3C427C solid 1px;
 }
-#currency-selector{
+
+#currency-selector {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0.5rem 0rem;
 }
-i{
+
+i {
     font-size: x-large;
     color: #3C427C;
 }
-input[type='button']{
-    background-color:#2d3583 ;
+
+input[type='button'] {
+    background-color: #2d3583;
     color: #fbb74f;
     font-weight: 700;
     letter-spacing: .1rem;
     font-size: medium;
     cursor: pointer;
 }
-input[type='button']:hover{
-    background-color:   #391e4f;
+
+input[type='button']:hover {
+    background-color: #391e4f;
     color: #faa437;
 }
+
 select {
     border: none;
     -webkit-appearance: none;
@@ -104,11 +122,13 @@ select {
     background-color: transparent;
     margin: 0;
 }
-select:focus{
+
+select:focus {
     outline: none;
-    
+
 }
-.select-elements{
+
+.select-elements {
     border: solid 1px #3C427C;
     background-color: #a88eec3d;
     padding: 0.5rem;
@@ -116,120 +136,150 @@ select:focus{
     display: flex;
     gap: 0.3rem;
 }
-option{
+
+option {
     width: 20%;
 }
-#currency-exchange{
+
+#currency-exchange {
     text-align: center;
     font-weight: 800;
 }
-.fa-arrows-up-down{
+
+.fa-arrows-up-down {
     transform: rotate(90deg);
 }
-@media screen and (max-width:60em){
-    .currency{
+
+@media screen and (max-width:60em) {
+    .currency {
         width: 80%;
     }
-    h2{
+
+    h2 {
         font-size: xx-large;
     }
-    .currency-convert{
+
+    .currency-convert {
         width: 76%;
-    
+
     }
-    label{
+
+    label {
         font-size: x-large;
     }
-    input{
+
+    input {
         padding: 1.2rem;
         margin: 0.8rem 0rem;
     }
-    #currency-selector{
+
+    #currency-selector {
         flex-direction: column;
         align-items: normal;
         gap: 1rem;
     }
-    img{
+
+    img {
         width: 18%;
     }
+
     .select-elements {
-        padding:0rem 0.5rem;
+        padding: 0rem 0.5rem;
         justify-content: center;
         gap: 0.7rem;
     }
-    select{
+
+    select {
         /* width: 70%; */
         background-size: 20%;
         font-size: large;
         font-weight: 600;
     }
-   #from-flag ,#to-flag{
+
+    #from-flag,
+    #to-flag {
         width: 13%;
-   }
-   .fa-arrows-up-down{
-    transform: none;
-    margin: auto;
-    font-size: xx-large;
-    color:#3C427C;
-  }
-  input[type='button']{
-    font-size: 1.4rem;
-  }
+    }
+
+    .fa-arrows-up-down {
+        transform: none;
+        margin: auto;
+        font-size: xx-large;
+        color: #3C427C;
+    }
+
+    input[type='button'] {
+        font-size: 1.4rem;
+    }
 }
 
 @media screen and (max-width:40em) {
-.currency{
-    width: 80%;
-}
-h2{
-    
-    font-size: large;
-}
-#currency-selector{
-    flex-direction: column;
-    align-items: normal;
-    gap: .7rem;
-}
-.select-elements {
-    padding:0rem 0.5rem;
-    justify-content: center;
-    gap: 0.3rem;
-}
-#from-flag ,#to-flag{
-    width: 20%;
-}
-img {
-    width: 23%;
-}
-select{
-    background-size: 7%;
-    font-size: medium;
-}
-.select-elements {
-   
-    gap: 1rem;
-}
-.currency-convert{
-    width: 76%;
+    .currency {
+        width: 80%;
+    }
 
-}
-select{
-    background-image: none;
-    
-}
-input{
-    padding: 0.9rem;
-    margin: 0.5rem 0rem;
+    h2 {
 
-}
-.fa-arrows-up-down{
-   transform: none;
-   margin: auto;
-}
-input[type='button']{
-    font-size: medium;
-  }
-  label {
-    font-size:medium;
-}
+        font-size: large;
+    }
+
+    #currency-selector {
+        flex-direction: column;
+        align-items: normal;
+        gap: .7rem;
+    }
+
+    .select-elements {
+        padding: 0rem 0.5rem;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+
+    #from-flag,
+    #to-flag {
+        width: 20%;
+    }
+
+    img {
+        width: 23%;
+    }
+
+    select {
+        background-size: 7%;
+        font-size: medium;
+    }
+
+    .select-elements {
+
+        gap: 1rem;
+    }
+
+    .currency-convert {
+        width: 76%;
+
+    }
+
+    select {
+        background-image: none;
+
+    }
+
+    input {
+        padding: 0.9rem;
+        margin: 0.5rem 0rem;
+
+    }
+
+    .fa-arrows-up-down {
+        transform: none;
+        margin: auto;
+    }
+
+    input[type='button'] {
+        font-size: medium;
+    }
+
+    label {
+        font-size: medium;
+    }
 }
