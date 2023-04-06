@@ -16,7 +16,6 @@ function convertCurrency() {
     fetch(api)
         .then(response => response.json())
         .then((data) => {
-            console.log(data)
             let exchangeRate = data.conversion_rates[toCurrency.value]
             console.log(exchangeRate);
             let totalExchangeRate = (amountValue * exchangeRate).toFixed(2);
